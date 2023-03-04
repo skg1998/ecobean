@@ -1,0 +1,304 @@
+{
+  "testCaseReports": [
+    {
+      "cadre": "Code Analysis",
+      "group": "PMD",
+      "testClass": "PMD",
+      "testCaseID": "CATC1-PMD.codingStandards",
+      "testCaseName": "Verifying the code for adherence to coding standards",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "CentralizedConfig",
+      "testClass": "CentralizedConfiguration",
+      "testCaseID": "MSTC1-CentralizedConfiguration.applicationYaml",
+      "testCaseName": "Verifying the content of application yaml",
+      "testCaseDescription": "Expecting spring.datasource properties not present in application.yml file",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "CentralizedConfig",
+      "testClass": "CentralizedConfiguration",
+      "testCaseID": "MSTC2-CentralizedConfiguration.bootstrapYaml",
+      "testCaseName": "Verifying the content of bootstrap yaml",
+      "testCaseDescription": "Expecting spring.datasource properties not present in bootstrap.yml file",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "CentralizedConfig",
+      "testClass": "CentralizedConfiguration",
+      "testCaseID": "MSTC3-CentralizedConfiguration.consulProperty",
+      "testCaseName": "Verifying the content of consul property",
+      "testCaseDescription": "Expecting CustomerMS config in consul",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "CentralizedConfig",
+      "testClass": "CentralizedConfiguration",
+      "testCaseID": "XMSTC4-CentralizedConfiguration.serverApplicationName",
+      "testCaseName": "Verifying the content of server application name",
+      "testCaseDescription": "Expecting Server Application Name to be CustomerCartMS in bootsrap yaml",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "CentralizedConfig",
+      "testClass": "CentralizedConfiguration",
+      "testCaseID": "MSTC5-CentralizedConfiguration.applicationProperties",
+      "testCaseName": "Verifying the content of application properties",
+      "testCaseDescription": "Expecting spring.datasource properties not present in application.properties file",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "CustomerAPI",
+      "testCaseID": "MSTC1-CustomerAPI.addProductToCart",
+      "testCaseName": "Verifying the content of add product to cart",
+      "testCaseDescription": "Expecting ProductMS load balanced rest call",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "CustomerConfig",
+      "testCaseID": "MSTC1-CustomerConfig.restTemplateBean",
+      "testCaseName": "Verifying the content of rest template bean",
+      "testCaseDescription": "Expecting load balanced annotation",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "OrderAPI",
+      "testCaseID": "MSTC1-OrderAPI.getOrderDetails",
+      "testCaseName": "Verifying the content of get order details",
+      "testCaseDescription": "Expecting ProductMS load balanced rest call",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "OrderAPI",
+      "testCaseID": "MSTC2-OrderAPI.placeOrder",
+      "testCaseName": "Verifying the content of place order",
+      "testCaseDescription": "Expecting CartMS load balanced rest call",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "OrderAPI",
+      "testCaseID": "MSTC3-OrderAPI.getOrdersOfCustomer",
+      "testCaseName": "Verifying the content of get orders of customer",
+      "testCaseDescription": "Expecting ProductMS load balanced rest call",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "LoadBalancing",
+      "testClass": "OrderAPI",
+      "testCaseID": "MSTC4-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the content of update order after payment",
+      "testCaseDescription": "Expecting ProductMS load balanced rest call",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Micro Service",
+      "group": "ServiceDiscovery",
+      "testClass": "ServiceRegistry",
+      "testCaseID": "MSTC1-ServiceRegistry.serviceResgistryForCustomerMS",
+      "testCaseName": "Verifying the content of service resgistry for customer m s",
+      "result": "Fail",
+      "reasonForFailure": "org.opentest4j.AssertionFailedError: expected: <200> but was: <503>"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "CustomerAPI",
+      "testCaseID": "STC1-CustomerAPI.addProductToCart",
+      "testCaseName": "Verifying the structure of addProductToCart",
+      "testCaseDescription": "Expecting 'RequestBody' annotation in 'bookingDTO' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "CustomerAPI",
+      "testCaseID": "STC2-CustomerAPI.addProductToCart",
+      "testCaseName": "Verifying the structure of addProductToCart",
+      "testCaseDescription": "Expecting 'PostMapping' annotation",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "CustomerAPI",
+      "testCaseID": "STC3-CustomerAPI.addProductToCart",
+      "testCaseName": "Verifying the structure of addProductToCart",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "CustomerAPI",
+      "testCaseID": "STC4-CustomerAPI.addProductToCart",
+      "testCaseName": "Verifying the structure of addProductToCart",
+      "testCaseDescription": "Expecting 'Valid' annotation in 'bookingDTO' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC1-OrderAPI.getOrdersOfCustomer",
+      "testCaseName": "Verifying the structure of getOrdersOfCustomer",
+      "testCaseDescription": "Expecting 'PathVariable' annotation in 'customerEmailId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC2-OrderAPI.placeOrder",
+      "testCaseName": "Verifying the structure of placeOrder",
+      "testCaseDescription": "Expecting 'Valid' annotation in 'bookingDTO' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC3-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the structure of updateOrderAfterPayment",
+      "testCaseDescription": "Expecting 'NotNull' annotation in 'orderId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC4-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the structure of updateOrderAfterPayment",
+      "testCaseDescription": "Expecting 'PathVariable' annotation in 'orderId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC5-OrderAPI.getOrdersOfCustomer",
+      "testCaseName": "Verifying the structure of getOrdersOfCustomer",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC6-OrderAPI.getOrderDetails",
+      "testCaseName": "Verifying the structure of getOrderDetails",
+      "testCaseDescription": "Expecting 'NotNull' annotation in 'orderId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC7-OrderAPI.getOrderDetails",
+      "testCaseName": "Verifying the structure of getOrderDetails",
+      "testCaseDescription": "Expecting 'PathVariable' annotation in 'orderId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC8-OrderAPI.placeOrder",
+      "testCaseName": "Verifying the structure of placeOrder",
+      "testCaseDescription": "Expecting 'RequestBody' annotation in 'bookingDTO' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC9-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the structure of updateOrderAfterPayment",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC10-OrderAPI.placeOrder",
+      "testCaseName": "Verifying the structure of placeOrder",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC11-OrderAPI.getOrderDetails",
+      "testCaseName": "Verifying the structure of getOrderDetails",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC12-OrderAPI.getOrdersOfCustomer",
+      "testCaseName": "Verifying the structure of getOrdersOfCustomer",
+      "testCaseDescription": "Expecting 'GetMapping' annotation",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC13-OrderAPI.placeOrder",
+      "testCaseName": "Verifying the structure of placeOrder",
+      "testCaseDescription": "Expecting 'PostMapping' annotation",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC14-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the structure of updateOrderAfterPayment",
+      "testCaseDescription": "Expecting 'RequestBody' annotation in 'transactionStatus' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC15-OrderAPI.getOrdersOfCustomer",
+      "testCaseName": "Verifying the structure of getOrdersOfCustomer",
+      "testCaseDescription": "Expecting 'Pattern' annotation in 'customerEmailId' parameter",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC16-OrderAPI.getOrderDetails",
+      "testCaseName": "Verifying the structure of getOrderDetails",
+      "testCaseDescription": "Expecting 'GetMapping' annotation",
+      "result": "Pass"
+    },
+    {
+      "cadre": "Structural",
+      "group": "API",
+      "testClass": "OrderAPI",
+      "testCaseID": "STC17-OrderAPI.updateOrderAfterPayment",
+      "testCaseName": "Verifying the structure of updateOrderAfterPayment",
+      "testCaseDescription": "Expecting 'PutMapping' annotation",
+      "result": "Pass"
+    }
+  ]
+}

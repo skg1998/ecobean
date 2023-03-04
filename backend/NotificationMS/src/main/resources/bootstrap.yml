@@ -1,0 +1,18 @@
+server:
+  port: 3339
+spring:
+  application:
+    name: NotificationMS
+  cloud:
+    consul:
+      discovery:
+        hostname: localhost
+        health-check-url: http://localhost:${server.port}${server.servlet.context-path}/actuator
+      config:
+        fail-fast: false
+        enabled: true
+        prefix: config
+        defaultContext: application
+        data-key: data
+        profileSeparator: '::'
+        format: YAML

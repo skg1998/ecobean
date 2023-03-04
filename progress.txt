@@ -1,0 +1,54 @@
+project setup 
+    - git 
+    - Actions (CI/ CD)
+    - docker
+    - kubernetes
+    - AWS
+
+- load blancing  
+- rate-limiter
+- service discovery
+- logging
+- Traceing
+- monitoring
+- gateway
+- circuit_brakers
+- authrization server
+- hystrix
+
+MICROSERVICES (Swagger ->(unit_testing)test case -> design pattern -> Solid)
+    ########## 1st Phase ###########################
+    - Auth
+    - Product 
+    - Cart
+    - Order
+    - Invoice
+    - payment
+
+    ########### 2nd Phase ######################
+    Notification
+    Product -> product_stock -> wharehouse -> product_review
+    Shipping -> package tracking -> shiping company
+    Discount
+    coupon
+    Inventroy
+
+FRONTEND
+    - store (Angular)
+    - Admin (Angular)
+    - website information  (react) 
+
+Project sturecture 
+    - microservice
+        - 1
+        - 2
+        .
+        .
+        .
+        - n
+    - Admin
+    - store
+    - website
+    - Document
+        - system_design
+

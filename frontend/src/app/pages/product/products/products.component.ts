@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-import { ProductDTO } from 'src/app/core/interfaces/Product';
 import { ProductService } from 'src/app/core/sevices/product/product.service';
 
 @Component({

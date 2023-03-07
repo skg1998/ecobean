@@ -62,3 +62,7 @@ Project sturecture
 
 
 user_search -> search_service -> elastic_search <- search consumer <- kafka -> spark_streaming -> hadoops-> spark_jobs
+
+
+frontend_progress: product -> category -> filter -> pagination -> product_des -> 
+backend_progress: product_pagination -> category -> filter -> 

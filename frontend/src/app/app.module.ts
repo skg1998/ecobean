@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { StoreModule } from '@ngrx/store';
 import { reducers } from './store';
 import { ComponentsModule } from './components/components.module';
+import { ProductModule } from './pages/product/product.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { ComponentsModule } from './components/components.module';
     HttpClientModule,
     FormsModule,
     ComponentsModule,
+    ProductModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
     StoreModule.forRoot(reducers),

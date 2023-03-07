@@ -25,6 +25,7 @@ export class ProductsComponent implements OnInit {
     this.productService.getAllProducts().subscribe(
       (data) => {
         this.productList = data;
+        console.log('product', this.productList);
         this.toastr.success('Get All Product', 'Product Fetch');
       },
       (error) => {

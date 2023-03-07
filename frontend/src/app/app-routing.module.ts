@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from './app.component';
 import { ForgetPasswordComponent } from './pages/auth/forget-password/forget-password.component';
 import { LoginComponent } from './pages/auth/login/login.component';
 import { ProfileComponent } from './pages/auth/profile/profile.component';

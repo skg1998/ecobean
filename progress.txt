@@ -3,11 +3,11 @@ project setup
     - Actions (CI/ CD)
     - docker
     - kubernetes
-    - AWS
+    - **********************AWS *******************
 
-- load blancing  
-- rate-limiter
-- service discovery
+- load blancing  ****************
+- rate-limiter *************
+- service discovery -- consule
 - logging
 - Traceing
 - monitoring
@@ -18,7 +18,8 @@ project setup
 
 MICROSERVICES (Swagger ->(unit_testing)test case -> design pattern -> Solid)
     ########## 1st Phase ###########################
-    - Auth
+    - Auth *** (jwt, role) 
+    - Recommandation_service 
     - Product 
     - Cart
     - Order
@@ -52,3 +53,12 @@ Project sturecture
     - Document
         - system_design
 
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+
+
+user_search -> search_service -> elastic_search <- search consumer <- kafka -> spark_streaming -> hadoops-> spark_jobs

@@ -444,3 +444,42 @@ java.lang.IllegalStateException: No instances available for localhost
 2023-Feb-03 23:11:05 pm [RMI TCP Connection(14)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-Feb-03 23:11:05 pm [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2023-Feb-03 23:11:05 pm [RMI TCP Connection(14)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-Mar-06 12:25:02 pm [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2023-Mar-06 12:25:03 pm [main] INFO  org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-config/CustomerCartMS/'}, BootstrapPropertySource {name='bootstrapProperties-config/application/'}]
+2023-Mar-06 12:25:05 pm [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-Mar-06 12:25:05 pm [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 2 JPA repository interfaces.
+2023-Mar-06 12:25:05 pm [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=97b5d44c-a834-3b89-b74d-3c7d56a12e27
+2023-Mar-06 12:25:06 pm [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3335 (http)
+2023-Mar-06 12:25:06 pm [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-3335"]
+2023-Mar-06 12:25:06 pm [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-Mar-06 12:25:06 pm [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.60]
+2023-Mar-06 12:25:06 pm [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Ekart] - Initializing Spring embedded WebApplicationContext
+2023-Mar-06 12:25:06 pm [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2570 ms
+2023-Mar-06 12:25:06 pm [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-Mar-06 12:25:07 pm [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.7.Final
+2023-Mar-06 12:25:07 pm [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-Mar-06 12:25:07 pm [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-Mar-06 12:25:07 pm [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-Mar-06 12:25:07 pm [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-Mar-06 12:25:08 pm [main] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-Mar-06 12:25:08 pm [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-Mar-06 12:25:09 pm [main] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-Mar-06 12:25:11 pm [main] WARN  org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-Mar-06 12:25:11 pm [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-Mar-06 12:25:11 pm [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-3335"]
+2023-Mar-06 12:25:11 pm [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 3335 (http) with context path '/Ekart'
+2023-Mar-06 12:25:11 pm [main] INFO  org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry - Registering service with consul: NewService{id='CustomerCartMS-3335', name='CustomerCartMS', tags=[contextPath=/Ekart], address='localhost', meta={secure=false}, port=3335, enableTagOverride=null, check=Check{script='null', dockerContainerID='null', shell='null', interval='10s', ttl='null', http='http://localhost:3335/Ekart/actuator', method='null', header={}, tcp='null', timeout='null', deregisterCriticalServiceAfter='null', tlsSkipVerify=null, status='null', grpc='null', grpcUseTLS=null}, checks=null}
+2023-Mar-06 12:25:14 pm [RMI TCP Connection(9)-127.0.0.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Ekart] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-Mar-06 12:25:14 pm [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-Mar-06 12:25:14 pm [RMI TCP Connection(9)-127.0.0.1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-Mar-06 14:30:01 pm [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m52s226ms307µs).
+2023-Mar-06 16:50:31 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-Mar-06 16:50:31 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-3335"]
+2023-Mar-06 16:50:31 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2023-Mar-06 16:50:31 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/Ekart] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-Mar-06 16:50:31 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-3335"]
+2023-Mar-06 16:50:32 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-3335"]
+2023-Mar-06 16:50:32 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.springframework.cloud.consul.serviceregistry.ConsulServiceRegistry - Deregistering service with consul: CustomerCartMS-3335
+2023-Mar-06 16:50:32 pm [RMI TCP Connection(262)-127.0.0.1] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-Mar-06 16:50:32 pm [RMI TCP Connection(262)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-Mar-06 16:50:32 pm [RMI TCP Connection(262)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

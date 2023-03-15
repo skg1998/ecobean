@@ -5,16 +5,18 @@ project setup
     - kubernetes
     - **********************AWS *******************
 
-- load blancing  ****************
-- rate-limiter *************
-- service discovery -- consule
-- logging
-- Traceing
-- monitoring
 - gateway
-- circuit_brakers
+- load blancing  
+- rate-limiter 
+- Consule - service_discovery 
+- Hystrix - circuit_brakers
 - authrization server
-- hystrix
+
+- Logstash - logging
+- Zipkins - distributed Traceing
+- promothus - service monitoring system
+- Grafana - monitoring
+- Elastic Search
 
 MICROSERVICES (Swagger ->(unit_testing)test case -> design pattern -> Solid)
     ########## 1st Phase ###########################

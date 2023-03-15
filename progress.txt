@@ -12,6 +12,7 @@ project setup
 - Hystrix - circuit_brakers
 - authrization server
 
+- Turbine - circuit breaker dashboard
 - Logstash - logging
 - Zipkins - distributed Traceing
 - promothus - service monitoring system
@@ -60,11 +61,12 @@ Project sturecture
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
-
-
+      
 
 user_search -> search_service -> elastic_search <- search consumer <- kafka -> spark_streaming -> hadoops-> spark_jobs
 
 
 frontend_progress: product -> category -> filter -> pagination -> product_des -> 
 backend_progress: product_pagination -> category -> filter -> 
+
+run skaffold dev -> k8s/* run  -> requirement (Dockerfile)

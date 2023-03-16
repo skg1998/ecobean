@@ -15,19 +15,44 @@ spring:
           uri: lb://CustomerCartMS
           predicates:
             - Path=/Ekart/customercart-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: CustomerCartMS
+              fallbackuri: forward:/fallbackCustomerCartHandler 
         - id: CustomerMS
           uri: lb://CustomerMS
           predicates:
             - Path=/Ekart/customer-api/**, /Ekart/customerorder-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: CustomerMS
+              fallbackuri: forward:/fallbackCustomerHandler   
         - id: PaymentMS
           uri: lb://PaymentMS
           predicates:
             - Path=/Ekart/payment-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: PaymentMS
+              fallbackuri: forward:/fallbackPaymentHandler   
         - id: ProductMS
           uri: lb://ProductMS
           predicates:
             - Path=/Ekart/product-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: ProductMS
+              fallbackuri: forward:/fallbackProductHandler   
         - id: NotificationMS
           uri: lb://NotificationMS
           predicates:
             - Path=/Ekart/notification-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: NotificationMS
+              fallbackuri: forward:/fallbackNotificationHandler   

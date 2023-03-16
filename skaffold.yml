@@ -4,22 +4,21 @@ deploy:
   kubectl:
     manifests:
       - ./k8s/infrastructure/*
-      - ./k8s/service/*
-build:
-  local:
-    push: false
-  artifacts:
-    # - image: sahilgupta04/auth
-    #   context: auth
-    #   docker:
-    #     dockerfile: Dockerfile
-    #   sync:
-    #     manual:
-    #       - src: 'src/**/*.ts'
-    #         dest: .
-    - image: sahilgupta04/order
-    - image: sahilgupta04/payment
-    - image: sahilgupta04/cart
-    - image: sahilgupta04/customer
-    - image: sahilgupta04/api-gatway
-    - image: sahilgupta04/payment
+#       - ./k8s/service/*
+# build:
+#   local:
+#     push: false
+#   artifacts:
+#     - image: sahilgupta04/order
+#       jib: {}
+#     - image: sahilgupta04/payment
+#       jib: {}
+#     - image: sahilgupta04/cart
+#       jib: {}
+#     - image: sahilgupta04/customer
+#       jib: {}
+#     - image: sahilgupta04/api-gatway
+#       jib: {}
+#     - image: sahilgupta04/payment
+#       jib: {}
+#     - image: sahilgupta04/frontend

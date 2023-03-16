@@ -1,2 +1,8 @@
+LOCAL
 For Running Consul (Discovery server)
     consul agent -server -bootstrap-expect=1 -data-dir=consul-data2 -ui -bind=127.0.0.1
+
+
+DEPLOY
+For run kubernetes config
+    skaffold dev

@@ -38,8 +38,7 @@ MICROSERVICES (Swagger ->(unit_testing)test case -> design pattern -> Solid)
     Inventroy
 
 FRONTEND
-    - store (Angular)
-    - Admin (Angular)
+    - store + Dashboard (Angular)
     - website information  (react) 
 
 Project sturecture 

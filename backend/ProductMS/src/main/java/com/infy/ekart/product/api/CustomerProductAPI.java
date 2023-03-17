@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.infy.ekart.product.dto.ProductDTO;
@@ -41,9 +42,9 @@ public class CustomerProductAPI {
     // Get all the product details by calling getAllProducts() of
  	// CustomerProductService and return the same
 	@GetMapping(value = "/products")
-	public ResponseEntity<List<ProductDTO>> getAllProducts() throws EKartProductException {
+	public ResponseEntity<List<ProductDTO>> getAllProducts(@RequestParam(defaultValue = "1") Integer pageNo,@RequestParam(defaultValue = "15") Integer pageSize) throws EKartProductException {
        // Write your logic here
-		List<ProductDTO> productDTOs = customerProductService.getAllProducts();
+		List<ProductDTO> productDTOs = customerProductService.getAllProducts(pageNo,pageSize);
 		return new ResponseEntity<List<ProductDTO>>(productDTOs, HttpStatus.OK);
 
 	}

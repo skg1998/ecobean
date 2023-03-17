@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,9 +33,15 @@ public class CustomerProductServiceImpl implements CustomerProductService {
 	//it to a List<ProductDTO>.
 	//Return the above obtained list
 	@Override
-	public List<ProductDTO> getAllProducts() throws EKartProductException {
-		Iterable<Product> products = productRepository.findAll();
+	public List<ProductDTO> getAllProducts(Integer pageNo,Integer pageSize) throws EKartProductException {
+	    Pageable pageable=PageRequest.of(pageNo, pageSize);
+		Page<Product> pageproduct = productRepository.findAll(pageable);
 		// Write your logic here
+		
+		if(pageproduct.hasContent()==false) {
+			return new ArrayList<>();
+		}
+		List<Product> products=pageproduct.getContent();
 		List<ProductDTO> listDto = new ArrayList<ProductDTO>();
 		for(Product p:products ) {
 			ProductDTO pdto = new ProductDTO();

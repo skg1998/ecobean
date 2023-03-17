@@ -69,3 +69,18 @@ frontend_progress: product -> category -> filter -> pagination -> product_des ->
 backend_progress: product_pagination -> category -> filter -> 
 
 run skaffold dev -> k8s/* run  -> requirement (Dockerfile)
+
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: [ "health","prometheus", "metrics" ]
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true

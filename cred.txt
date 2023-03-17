@@ -6,3 +6,10 @@ For Running Consul (Discovery server)
 DEPLOY
 For run kubernetes config
     skaffold dev
+
+
+
+Product :- pagination*    
+
+servcie : category
+service : filter + Search

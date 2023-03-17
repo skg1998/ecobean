@@ -34,7 +34,6 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
-		<!--Uncomment Below dependencies after implementing complete logic -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-consul-config</artifactId>
@@ -121,6 +120,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+		   <groupId>io.micrometer</groupId>
+		   <artifactId>micrometer-registry-prometheus</artifactId>
+		   <scope>runtime</scope>
 		</dependency>
 	</dependencies>
 

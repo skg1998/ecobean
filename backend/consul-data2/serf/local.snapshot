@@ -28,3 +28,5 @@ event-clock: 11
 =======
 >>>>>>> 44f0f4305189b97965ee8c9a31efed8f11e2142a
 >>>>>>> 26be76c36ca7b8f3f1c5f49f526bc6bcb8b1c897
+alive: LAPTOP-2P0EAHB8 127.0.0.1:8301
+event-clock: 1

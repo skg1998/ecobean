@@ -1,7 +1,10 @@
-package com.ecobean.utility;
+package com.ecobean.category.utility;
 
 import java.time.LocalDateTime;
 import java.util.stream.Collectors;
+
+import javax.validation.ConstraintViolationException;
+
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,9 +17,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 
-import com.ecobean.exception.EntityNotFoundException;
-
-import jakarta.validation.ConstraintViolationException;
+import com.ecobean.category.exception.EntityNotFoundException;
 
 @RestControllerAdvice
 public class ExceptionControllerAdvice {

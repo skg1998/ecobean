@@ -1,8 +1,8 @@
-package com.ecobean.service;
+package com.ecobean.category.service;
 
 import java.util.List;
 
-import com.ecobean.dto.CategoryDto;
+import com.ecobean.category.dto.CategoryDto;
 
 public interface CategoryService {
 	List<CategoryDto> getAllCategories();

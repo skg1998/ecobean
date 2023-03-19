@@ -1,4 +1,4 @@
-package com.ecobean.api;
+package com.ecobean.category.api;
 
 import java.util.List;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.ecobean.dto.CategoryDto;
-import com.ecobean.service.CategoryService;
+import com.ecobean.category.dto.CategoryDto;
+import com.ecobean.category.service.CategoryService;
 
 
 @RestController

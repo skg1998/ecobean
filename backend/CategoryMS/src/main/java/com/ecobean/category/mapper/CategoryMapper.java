@@ -1,12 +1,12 @@
-package com.ecobean.mapper;
+package com.ecobean.category.mapper;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Component;
 
-import com.ecobean.dto.CategoryDto;
-import com.ecobean.entity.Category;
+import com.ecobean.category.dto.CategoryDto;
+import com.ecobean.category.entity.Category;
 
 @Component
 @Mapper(componentModel = "spring")

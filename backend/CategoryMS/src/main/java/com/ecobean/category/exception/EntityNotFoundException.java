@@ -1,4 +1,4 @@
-package com.ecobean.exception;
+package com.ecobean.category.exception;
 
 public class EntityNotFoundException extends RuntimeException {
 	public EntityNotFoundException(String message) {

@@ -1,25 +1,24 @@
-package com.ecobean.service;
+package com.ecobean.category.service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ecobean.dto.CategoryDto;
-import com.ecobean.entity.Category;
-import com.ecobean.exception.EntityNotFoundException;
-import com.ecobean.mapper.CategoryMapper;
-import com.ecobean.repository.CategoryRepository;
+import com.ecobean.category.dto.CategoryDto;
+import com.ecobean.category.entity.Category;
+import com.ecobean.category.exception.EntityNotFoundException;
+import com.ecobean.category.mapper.CategoryMapper;
+import com.ecobean.category.repository.CategoryRepository;
 
 @Service
 @Transactional
 public class CategoryServiceImpl implements CategoryService {
-	private final CategoryRepository categoryRepository;
-
-    public CategoryServiceImpl(CategoryRepository categoryRepository) {
-        this.categoryRepository = categoryRepository;
-    }
+	
+	@Autowired
+	private CategoryRepository categoryRepository;
 
     public CategoryDto getCategoryById(Long id) {
         Category category = categoryRepository.findById(id)

@@ -1,4 +1,4 @@
-package com.ecobean.utility;
+package com.ecobean.category.utility;
 
 import java.time.LocalDateTime;
 

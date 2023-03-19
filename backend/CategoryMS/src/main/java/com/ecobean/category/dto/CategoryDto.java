@@ -1,4 +1,4 @@
-package com.ecobean.dto;
+package com.ecobean.category.dto;
 import java.util.List;
 
 import lombok.Data;

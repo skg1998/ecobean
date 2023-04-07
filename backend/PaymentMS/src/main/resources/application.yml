@@ -1,0 +1,10 @@
+resilience4j:
+  circuitbreaker:
+    instances:
+      paymentService:
+        failureRateThreshold: 50
+        ringBufferSizeInCloseState: 5
+        ringBufferSizeInHalfOpenState: 3
+        waitDurationInOpenState: 30s
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+      # Add the missing attributes

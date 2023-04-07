@@ -1,0 +1,50 @@
+.metadata
+/backend/.metadata/
+
+consul.exe
+
+
+# compiled output
+# /dist
+# /tmp
+# /out-tsc
+# Only exists if Bazel was run
+# /bazel-out
+
+# frontend dependencies
+node_modules
+consul.exe
+.mvn
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db

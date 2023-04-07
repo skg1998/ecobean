@@ -1,0 +1,24 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      - ./k8s/infrastructure/*
+#       - ./k8s/service/*
+# build:
+#   local:
+#     push: false
+#   artifacts:
+#     - image: sahilgupta04/order
+#       jib: {}
+#     - image: sahilgupta04/payment
+#       jib: {}
+#     - image: sahilgupta04/cart
+#       jib: {}
+#     - image: sahilgupta04/customer
+#       jib: {}
+#     - image: sahilgupta04/api-gatway
+#       jib: {}
+#     - image: sahilgupta04/payment
+#       jib: {}
+#     - image: sahilgupta04/frontend

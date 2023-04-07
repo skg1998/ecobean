@@ -1,0 +1,86 @@
+project setup 
+    - git 
+    - Actions (CI/ CD)
+    - docker
+    - kubernetes
+    - **********************AWS *******************
+
+- gateway
+- load blancing  
+- rate-limiter 
+- Consule - service_discovery 
+- Hystrix - circuit_brakers
+- authrization server
+
+- Turbine - circuit breaker dashboard
+- Logstash - logging
+- Zipkins - distributed Traceing
+- promothus - service monitoring system
+- Grafana - monitoring
+- Elastic Search
+
+MICROSERVICES (Swagger ->(unit_testing)test case -> design pattern -> Solid)
+    ########## 1st Phase ###########################
+    - Auth *** (jwt, role) 
+    - Recommandation_service 
+    - Product 
+    - Cart
+    - Order
+    - Invoice
+    - payment
+
+    ########### 2nd Phase ######################
+    Notification
+    Product -> product_stock -> wharehouse -> product_review
+    Shipping -> package tracking -> shiping company
+    Discount
+    coupon
+    Inventroy
+
+FRONTEND
+    - store + Dashboard (Angular)
+    - website information  (react) 
+
+Project sturecture 
+    - microservice
+        - 1
+        - 2
+        .
+        .
+        .
+        - n
+    - Admin
+    - store
+    - website
+    - Document
+        - system_design
+
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
+
+user_search -> search_service -> elastic_search <- search consumer <- kafka -> spark_streaming -> hadoops-> spark_jobs
+
+
+frontend_progress: product -> category -> filter -> pagination -> product_des -> 
+backend_progress: product_pagination -> category -> filter -> 
+
+run skaffold dev -> k8s/* run  -> requirement (Dockerfile)
+
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: [ "health","prometheus", "metrics" ]
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true

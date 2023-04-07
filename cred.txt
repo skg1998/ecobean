@@ -1,0 +1,23 @@
+LOCAL
+For Running Consul (Discovery server)
+    consul agent -server -bootstrap-expect=1 -data-dir=consul-data2 -ui -bind=127.0.0.1
+
+
+DEPLOY
+For run kubernetes config
+    - skaffold dev
+    on access following servcie
+    http://ecobean.com/prometheus
+    http://ecobean.com/grafana
+    http://ecobean.com/zipkin
+    http://ecobean.com/rabbitmq
+
+Expose 
+kubectl expose deployment prometheus --type=LoadBalancer --port=9090 --target-port=9090 --name=prometheus-service
+
+kubectl expose deployment grafana --type=LoadBalancer --port=3000 --target-port=3000 --name=grafana-service    
+
+kubectl expose deployment rabbitmq --type=LoadBalancer --port=5672 --target-port=5672 --name=rabbitmq-service
+
+kubectl expose deployment zipkin --type=NodePort --port=9411 --name=zipkin-service
+

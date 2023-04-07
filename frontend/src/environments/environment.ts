@@ -1,4 +1,4 @@
 export const environment = {
   production: false,
-  BASE_URL: 'http://localhost:8080/Ekart',
+  BASE_URL: 'http://localhost:4000/Ekart',
 };

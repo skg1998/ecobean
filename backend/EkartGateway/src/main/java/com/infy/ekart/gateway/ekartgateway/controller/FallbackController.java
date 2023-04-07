@@ -34,5 +34,10 @@ public class FallbackController {
 	public ResponseEntity<String> fallbackNotificationHandler(){
 		return new ResponseEntity<String>("Notification Service is down",HttpStatus.INTERNAL_SERVER_ERROR);
 	}
+    
+    @GetMapping("/fallbackCategoryHandler")
+	public ResponseEntity<String> fallbackCategoryHandler(){
+		return new ResponseEntity<String>("Category Service is down",HttpStatus.INTERNAL_SERVER_ERROR);
+	}
 
 }

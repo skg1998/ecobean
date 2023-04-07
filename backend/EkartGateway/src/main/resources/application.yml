@@ -56,3 +56,13 @@ spring:
             args:
               name: NotificationMS
               fallbackuri: forward:/fallbackNotificationHandler   
+        - id: CategoryMS
+          uri: lb://CategoryMS
+          predicates:
+            - Path=/Ekart/category-api/**
+          filters:
+          - name: CircuitBreaker 
+            args:
+              name: CategoryMS
+              fallbackuri: forward:/fallbackCategoryHandler   
+
